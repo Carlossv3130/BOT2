@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ECOBOT</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    #chat-form {
+      width: 70%;
+      border: 1px solid #ebe7e7;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      position: relative;
+    }
+
+    #chat-title {
+      color: #649b66; /* Color verde para el título */
+      margin-bottom: 10px;
+    }
+
+    #chat-description {
+      color: #80af80; /* Mismo color que el título */
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+
+    #chat-box {
+      width: 100%;
+      height: 450px;
+      border: none; /* Sin bordes */
+      overflow-y: auto;
+      margin-bottom: 10px;
+    }
+
+    #user-input {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+
+    #message-input {
+      flex: 1;
+      padding: 8px;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+      margin-right: 10px; /* Espaciado entre la barra de chat y el botón de enviar */
+    }
+
+    #send-button {
+      cursor: pointer;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 8px;
+    }
+
+    /* Agregado para el estilo del chat */
+    .user-message {
+      background-color: #81c784;
+      color: black; /* Letras negras para mensajes del usuario */
+      padding: 10px;
+      border-radius: 10px;
+      align-self: flex-end;
+      max-width: 70%;
+      margin-bottom: 15px;
+      margin-left: 30%;
+    }
+
+    .bot-message {
+      background-color: #64b5f6;
+      color: black; /* Letras negras para mensajes del bot */
+      padding: 10px;
+      border-radius: 10px;
+      align-self: flex-start;
+      max-width: 70%;
+      margin-bottom: 15px;
+      margin-right: 30%;
+    }
+  </style>
+</head>
+<body>
+  <form id="chat-form">
+    <h1 id="chat-title">ECOBOT</h1>
+    <p id="chat-description">Tu asistente de ventas ecológicas de paneles solares y multiplexores</p>
+    <div id="chat-box"></div>
+    <div id="user-input">
+      <input type="text" id="message-input" placeholder="Type your message..." required>
+      <button type="submit" id="send-button" onclick="sendMessage()">Send</button>
+    </div>
+  </form>
+  <script src="/app.js"></script>
+  <script>
+    function sendMessage() {
+      // Aquí puedes agregar la lógica específica para enviar mensajes
+      // Puedes usar document.getElementById para obtener el valor del mensaje y realizar acciones adicionales.
+      // Por ejemplo:
+      // const message = document.getElementById('message-input').value;
+      // Realizar acciones con el mensaje...
+    }
+  </script>
+</body>
+</html>
